@@ -1,4 +1,4 @@
-//--- Day 1 " Sonar Sweep " ---
+package Contest;//--- Day 1 " Sonar Sweep " ---
 // https://adventofcode.com/2021/day/1
 
 import java.util.*;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import java.io.*;
 
-public class day1 {
+public class Day1 {
     public static void main(String[] args) throws Exception {
         System.out.println(increasmentValue(readFile("src/main/resources/input.txt")));
     }
