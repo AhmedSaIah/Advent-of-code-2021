@@ -8,7 +8,8 @@ import java.io.*;
 
 public class Day1 {
     public static void main(String[] args) throws Exception {
-        System.out.println(increasmentValue(readFile("src/main/resources/input.txt")));
+       // System.out.println(increasmentValue(readFile("src/main/resources/input.txt")));
+        System.out.println(partTwo(readFile("src/main/resources/input.txt")));
     }
 
     public static ArrayList<Integer> readFile(String filePath) throws Exception {
@@ -46,5 +47,20 @@ public class Day1 {
         }
 
         return increaseTimes;
+    }
+
+    public static int partTwo(ArrayList<Integer> arr){
+        int i=0;
+        int increasment = 0;
+        int sumOfPreviousThreeValues = arr.get(i)+arr.get(i+1)+arr.get(i+2);
+        int sumOfNewThreeValues= arr.get(i+3)+arr.get(i+4)+arr.get(i+5);
+        for(i=0; i<arr.size()-2; i++){
+            if(sumOfPreviousThreeValues < sumOfNewThreeValues){
+                increasment++;
+                i++;
+            }
+
+        }
+        return increasment;
     }
 }
