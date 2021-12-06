@@ -1,4 +1,5 @@
-package Contest;//--- Day 1 " Sonar Sweep " ---
+package Contest;
+//--- Day 1 " Sonar Sweep " ---
 // https://adventofcode.com/2021/day/1
 
 import java.util.*;
