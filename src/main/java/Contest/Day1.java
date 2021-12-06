@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Day1 {
     public static void main(String[] args) throws Exception {
-       // System.out.println(increasmentValue(readFile("src/main/resources/input.txt")));
+        System.out.println(increasmentValue(readFile("src/main/resources/input.txt")));
         System.out.println(partTwo(readFile("src/main/resources/input.txt")));
     }
 
