@@ -1,4 +1,5 @@
-package Contest;//--- Day 1 " Sonar Sweep " ---
+package Contest;
+//--- Day 1 " Sonar Sweep " ---
 // https://adventofcode.com/2021/day/1
 
 import java.util.*;
@@ -8,8 +9,8 @@ import java.io.*;
 
 public class Day1 {
     public static void main(String[] args) throws Exception {
-        System.out.println(increasmentValue(readFile("src/main/resources/input.txt")));
-        System.out.println(partTwo(readFile("src/main/resources/input.txt")));
+        System.out.println(partOneIncreasmentValue(readFile("src/main/resources/input.txt")));
+        System.out.println(partTwoIncreasmentValue(readFile("src/main/resources/input.txt")));
     }
 
     public static ArrayList<Integer> readFile(String filePath) throws Exception {
@@ -32,7 +33,7 @@ public class Day1 {
 */
     }
 
-    public static int increasmentValue(ArrayList<Integer> arr) {
+    public static int partOneIncreasmentValue(ArrayList<Integer> arr) {
 
         int previousValue = arr.get(0);
         int increaseTimes = 0;
@@ -49,7 +50,8 @@ public class Day1 {
         return increaseTimes;
     }
 
-    public static int partTwo(ArrayList<Integer> arr){
+
+    public static int partTwoIncreasmentValue(ArrayList<Integer> arr){
         int i=0;
         int increasment = 0;
         int sumOfPreviousThreeValues = arr.get(i)+arr.get(i+1)+arr.get(i+2);
