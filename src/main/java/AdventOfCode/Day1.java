@@ -1,7 +1,6 @@
-package Contest;
+package AdventOfCode;
 //--- Day 1 " Sonar Sweep " ---
 // https://adventofcode.com/2021/day/1
-
 import java.util.ArrayList;
 import java.io.*;
 import java.util.Scanner;
@@ -22,7 +21,6 @@ public class Day1 {
         //part 2
         System.out.println(part2);
     }
-
 /*
         Checking the record of each line in the file by using this loop
        for (int i : numbers) {
@@ -35,8 +33,7 @@ public class Day1 {
         //int previousValue = input.get(0);
         int increaseTimes = 0;
         for (int index = 0; index < input.size() - count; index++) {
-            increaseTimes =
-                    increaseTimes + (input.get(index + count) > input.get(index) ? 1 : 0);
+            increaseTimes = increaseTimes + (input.get(index + count) > input.get(index) ? 1 : 0);
         }
         return increaseTimes;
     }
