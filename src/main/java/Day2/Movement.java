@@ -1,4 +1,4 @@
-package AdventOfCode;
+package Day2;
 
 public class Movement {
      int direction;
