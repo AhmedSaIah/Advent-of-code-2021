@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Day2 {
     public static void main(String[] args) throws FileNotFoundException {
         List<Movement> data = new ArrayList<>();
-        File file = new File("src/main/resources/inputDay2.txt");
+        File file = new File("src/main/resources/Day2_Input.txt");
         Scanner myReader = new Scanner(file);
         while (myReader.hasNextLine()) {
             String[] line = myReader.nextLine().split(" ");
